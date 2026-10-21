@@ -1,0 +1,43 @@
+=======================================================
+                 WebShield Scanner
+=======================================================
+Target: https://example.com
+Scan date: 2026-10-21 16:02:39
+
+Checking HTTP security headers...
+
+HTTP Status: 200
+Final URL: https://example.com
+HTTPS: Enabled
+
+[MISSING] Content-Security-Policy
+          Helps prevent content injection attacks.
+
+[MISSING] Strict-Transport-Security
+          Enforces HTTPS connections.
+
+[MISSING] X-Content-Type-Options
+          Helps prevent MIME-type sniffing.
+
+[MISSING] X-Frame-Options
+          Helps protect against clickjacking.
+
+[MISSING] Referrer-Policy
+          Controls referrer information.
+
+[MISSING] Permissions-Policy
+          Controls access to browser features.
+
+Checking CORS configuration...
+
+[INFO] No Access-Control-Allow-Origin header found.
+This response does not show CORS permission for this test origin.
+
+=======================================================
+                 Scan Summary
+=======================================================
+Security headers found: 0
+Security headers missing: 6
+
+Note: Missing headers do not automatically mean
+the website is vulnerable. Review results in context.
